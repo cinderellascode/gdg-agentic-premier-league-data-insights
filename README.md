@@ -14,7 +14,7 @@ This loads 5 sample matches (La Liga, Premier League, Women's World Cup) into `s
 
 ## Phase 2 - Insight engine (Groq)
 
-AI insights use the [Groq API](https://console.groq.com/) (not Anthropic).
+AI insights use the [Groq API](https://console.groq.com/).
 
 ```bash
 cd statsense/backend
