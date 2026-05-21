@@ -2,7 +2,7 @@
 
 Sports analytics dashboard that turns StatsBomb match data into fan-friendly insights.
 
-## Phase 1 — Data layer
+## Phase 1 - Data layer
 
 ```bash
 cd statsense/backend
@@ -12,7 +12,7 @@ python data_loader.py
 
 This loads 5 sample matches (La Liga, Premier League, Women's World Cup) into `statsense.db`.
 
-## Phase 2 — Insight engine (Groq)
+## Phase 2 - Insight engine (Groq)
 
 AI insights use the [Groq API](https://console.groq.com/) (not Anthropic).
 
@@ -32,7 +32,7 @@ python insight_engine.py --demo --fallback
 
 Copy `.env.example` to `.env` and set `GROQ_API_KEY` if you load env vars in the FastAPI app later.
 
-## Phase 3 — Backend API
+## Phase 3 - Backend API
 
 ```bash
 cd statsense/backend
@@ -51,18 +51,18 @@ Open **http://127.0.0.1:8000/docs** for interactive API docs.
 | `GET /player/{player_id}/season` | Season aggregates + trend |
 | `POST /ask` | Fan Q&A (`question`, `match_id`) |
 
-## Phase 4 — Frontend dashboard
+## Phase 4 - Frontend dashboard
 
 React + Tailwind + Recharts UI. The dev server proxies `/api` → `http://127.0.0.1:8000`.
 
-**Terminal 1 — backend:**
+**Terminal 1 - backend:**
 
 ```bash
 cd statsense/backend
 uvicorn main:app --reload --port 8000
 ```
 
-**Terminal 2 — frontend:**
+**Terminal 2 - frontend:**
 
 ```bash
 cd statsense/frontend
@@ -80,9 +80,9 @@ Open **http://localhost:5173**
 
 Production build: `npm run build` (set `VITE_API_URL=http://127.0.0.1:8000` if not using the dev proxy).
 
-## Phase 5 — Bonus features
+## Phase 5 - Bonus features
 
-**Fan mode toggle** (nav bar): Casual · Enthusiast · Analyst — filters stats, timeline, and comparison depth.
+**Fan mode toggle** (nav bar): Casual · Enthusiast · Analyst - filters stats, timeline, and comparison depth.
 
 **Timeline** (Enthusiast+): Goals, cards, subs from StatsBomb. Click an event for an AI impact explanation.
 
