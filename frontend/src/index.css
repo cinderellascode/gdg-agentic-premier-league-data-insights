@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+  --color-pitch: #0a1628;
+  --color-pitch-light: #132238;
+  --color-grass: #22c55e;
+  --color-grass-dim: #16a34a;
+  --color-amber-warn: #f59e0b;
+  --color-rose-below: #f43f5e;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background: linear-gradient(160deg, #0a1628 0%, #0f1f35 45%, #0a1628 100%);
+  color: #e2e8f0;
+}
+
+#root {
+  min-height: 100vh;
+}
